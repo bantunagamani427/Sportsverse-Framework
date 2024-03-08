@@ -21,17 +21,17 @@ public class TC_003_SportsVerse101Test extends BaseClass{
 		WebDriverUtil driverUtil=new WebDriverUtil(driver);
 
 		Learn1Page learn1Page=new Learn1Page(driver);
-//Click on Learn Drop down  
+            //Click on Learn Drop down  
 		
 		WebElement learnDD=learn1Page.getlearnDD();
 		driverUtil.moveToelement(learnDD);
 		learnDD.click();
-
+         //Click on Sportsverse 101
 		WebElement sportsverse101DD=learn2Page.getSportsVerse101DD();
 		driverUtil.moveToelement(sportsverse101DD);
 		sportsverse101DD.click();
 
-		Thread.sleep(6000);
+		Thread.sleep(2000);
 
 		WebElement downloadApp=learn2Page.getdownLoadApp();
 		driverUtil.moveToelement(downloadApp);

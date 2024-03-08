@@ -46,16 +46,16 @@ public class WebDriverUtil {
 	}
 
 	public void waitanClick(WebElement element){
-		
+
 		WebDriverWait wait=new WebDriverWait(driver,10); 
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
-	
+
 	public void invisibiltyOfElement(WebElement element) {
 		WebDriverWait wait=new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.invisibilityOf(element));
 	}
-	
+
 	public void presenceOfElement(By Locator) {
 		WebDriverWait wait=new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.presenceOfElementLocated(Locator));
@@ -101,7 +101,7 @@ public class WebDriverUtil {
 		//WebdriverUtility util = new WebdriverUtility();
 		//util.scrollPageDown(driver, 16000);
 	}
-	
+
 	public void scrollIntoView(WebElement element) {
 		JavascriptExecutor jse=(JavascriptExecutor)driver;
 		jse.executeScript("arguments[0].scrollIntoView();", element);
@@ -161,6 +161,7 @@ public class WebDriverUtil {
 					driver.switchTo().window(childWindow);
 				}
 			}
+			
 			driver.close();
 			Thread.sleep(3000);
 			driver.switchTo().window(parentWindow);
@@ -197,7 +198,6 @@ public class WebDriverUtil {
     driver.switchTo().window(parentWindow);
     return parentWindow;
   }
-
 
   //call switchwindow method to test case
 

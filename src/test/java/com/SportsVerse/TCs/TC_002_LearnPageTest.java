@@ -35,7 +35,9 @@ public class TC_002_LearnPageTest extends BaseClass{
 		System.out.println(learnPage.getlearnTheWorldTxt().getText());
 
 		System.out.println("*************************");
-
+       
+		//Clicking on download app
+		
 		WebElement downloadappLink=learnPage.getdownloadApp();
 		driverUtil.moveToelement(downloadappLink);
 		downloadappLink.click();
@@ -43,18 +45,26 @@ public class TC_002_LearnPageTest extends BaseClass{
 		Thread.sleep(2000);
 		driverUtil.switchToChildWindowAndClose(driver);
 
+		//Getting the how can you earn text 
+		
 		System.out.println(learnPage.getHowCanYouEarn().getText());
 
 		System.out.println("****************************");
 
+		//getting the what are yur goods text 
+		
 		System.out.println(learnPage.getwhatAreYourGoodsTxt().getText());
 
 		System.out.println("*****************************");
-
+        
+		//all depends on text
+		
 		System.out.println(learnPage.getItAllDependsOnTxt().getText());
 
 		System.out.println("****************************");
 
+		//Excited to learn text 
+		
 		System.out.println(learnPage.getexcitedToLearnTxt().getText());
 
 		System.out.println("***************************");
@@ -63,6 +73,8 @@ public class TC_002_LearnPageTest extends BaseClass{
 
 		Thread.sleep(4000);
 
+		//Clicking on sportsverse 101 link 
+		
 		WebElement sportsverse101Link=learnPage.getsportsverse101Link();
 
 		driverUtil.moveToelement(sportsverse101Link);
@@ -77,6 +89,8 @@ public class TC_002_LearnPageTest extends BaseClass{
 
 		Thread.sleep(2000);
 
+		//clicking on download app link of image   
+		
 		WebElement imageDownloadApp=learnPage.getImageDownLoadApp();
 		driverUtil.moveToelement(imageDownloadApp);
 		imageDownloadApp.click();
@@ -90,6 +104,8 @@ public class TC_002_LearnPageTest extends BaseClass{
 
 		HomePage homepage=new HomePage(driver);
 
+		//Getting the FAQ'S text and clicking on each FAQ
+		
 		Actions act=new Actions(driver);
 		List<WebElement> footerFAQLinks = homepage.getFooterFAQLinks();
 

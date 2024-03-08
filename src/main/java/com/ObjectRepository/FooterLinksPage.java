@@ -53,10 +53,8 @@ public class FooterLinksPage {
 			 driver.switchTo().window(parentWindow);
 		 }
 	 }
-
 	 
 	 
-
 	 @FindBy(xpath= "//li[normalize-space()='Home']")
 	 private WebElement homeLink;
 	 public WebElement gethomeLink() {

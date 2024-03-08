@@ -37,11 +37,4 @@ public class LoginPage {
 	public WebElement getmodalLoader() {
 		return modalLoader;
 	}
-
-
-
-
-
-
-
 }

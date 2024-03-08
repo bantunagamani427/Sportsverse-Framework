@@ -15,14 +15,14 @@ import com.ObjectRepository.HomePage;
 public class TC_001_HomepageTest extends BaseClass{
 
 	@Test(priority = 1)
-	
+
 	public void homepagetest() throws IOException, InterruptedException {
 
 		WebDriverUtil driverUtil=new WebDriverUtil(driver);
 
 		HomePage homepage=new HomePage(driver);
 
-		//Verify the page Title is correct
+		//Verify the page Title is correct    
 
 		String expectedTitle="Sportsverse";
 		String actualTitle=driverUtil.pageTitle();	
@@ -49,7 +49,7 @@ public class TC_001_HomepageTest extends BaseClass{
 		FooterLinksPage footerPage=new FooterLinksPage(driver);
 
 		WebElement footer= footerPage.getfooterPresent();
-		
+
 		if(footer.isDisplayed()) {
 			System.out.println("Footer is Displayed");
 		}
@@ -57,10 +57,10 @@ public class TC_001_HomepageTest extends BaseClass{
 		else {
 			System.out.println("footer is not displayed");
 		}
-		
+
 		//Verify that all page Links are functional and Lead to the correct pages
-		
-		
+
+
 
 		//clicking on download app
 
@@ -134,7 +134,7 @@ public class TC_001_HomepageTest extends BaseClass{
 		System.out.println("*********************************");
 		//driverUtil.closeBrowser();
 	}
-	
+
 	@Test(priority =2)
 	public void homeTest() throws InterruptedException {
 
@@ -189,6 +189,6 @@ public class TC_001_HomepageTest extends BaseClass{
 		}	
 		System.out.println("*************************");
 		System.out.println("Each FAQ link has been clicked and get the text of each FAQ");
-		
+
 	}	
 }
